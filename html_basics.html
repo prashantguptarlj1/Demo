@@ -1,0 +1,311 @@
+<html>
+
+<!-- Tags vs Elements  
+Tag            -> <h1>, </h1>
+Element        -> <h1>Shubham</h1>    
+-->
+
+<head>
+    <title>
+        HTML Introduction
+    </title>
+</head>
+
+<body>
+
+    <!-- div vs span
+    div - 
+        > takes the entire row space
+        > it will not allow other elements to sit beside it
+        > always starts from a new line   
+
+     span - 
+        > takes only the required space
+        > it will allow other elements to sit beside it
+        > always starts from the same line 
+    -->
+
+    <div>Shubham Arora</div>
+    <span>Welcome !!!</span>
+    <div>FullStack Developer</div>
+
+    <span>Welcome !!!</span>
+    <span>Edureka's Internship Program</span>
+    <div>New Line</div>
+
+    <!-- Style Tags -->
+
+    <b>Hello</b>
+    <i>Hello</i>
+    <u>Hello</u>
+
+    <!-- Comments in HTML -->
+
+    <!-- Headings in HTML -->
+
+    <h1>Heading</h1>
+    <h2>Heading</h2>
+    <h3>Heading</h3>
+    <h4>Heading</h4>
+    <h5>Heading</h5>
+    <h6>Heading</h6>
+
+    <!-- Nested Tags -->
+
+    <div>
+        <b>
+            <i>
+                <u>
+                    Hello
+                </u>
+            </i>
+        </b>
+    </div>
+
+    <!-- br : self closing tags OR Empty tags -->
+
+    <span>Hi</span>
+    <br />
+    <span>Hello</span>
+
+    <hr />
+
+    <!-- Attributes imparts characteristics to HTML elements -->
+
+    <div style="width: 200px; height: 200px; background-color: brown;">
+        <!-- Img Tag -->
+        <img src="./Images/homepageimg.png" width="50%" height="50%" />
+    </div>
+
+    <!-- Input Tag -->
+
+    <input type="text" />
+    <input type="color" />
+    <input type="date" />
+    <input type="number" />
+    <input type="password" />
+    <input type="file" />
+    <input type="tel" />
+    <input type="url" />
+
+    <!-- Radio - one at a time -->
+    <input type="radio" name="gender" /><span>Male</span>
+    <input type="radio" name="gender" /><span>Female</span>
+
+    <!-- Checkbox - multiple selections at a time -->
+    <div>
+        <input type="checkbox" /><span>FrontEnd Developer</span>
+        <input type="checkbox" /><span>BackEnd Developer</span>
+        <input type="checkbox" /><span>DB Developer</span>
+    </div>
+
+    <!-- Buttons -->
+
+    <button>Click Me!!!</button>
+    <input type="button" value="Submit" />
+
+    <!-- HTML Forms -->
+
+    <form>
+        <h3>Vaccination Registration Form</h3>
+        <div>
+            <label>First Name : </label>
+            <input type="text" required placeholder="Enter your name" />
+        </div>
+        <div>
+            <label>Last Name : </label>
+            <input type="text" />
+        </div>
+        <div>
+            <label>Gender : </label>
+            <input type="radio" name="gender" /><label>Male</label>
+            <input type="radio" name="gender" /><label>Female</label>
+        </div>
+        <div>
+            <label>Mobile Number : </label>
+            <input type="tel" />
+        </div>
+        <div>
+            <label>City : </label>
+            <select>
+                <option>Select</option>
+                <option>Delhi</option>
+                <option>Bangalore</option>
+                <option>Pune</option>
+                <option>Chennai</option>
+                <option>Varanasi</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" />
+            <input type="reset" />
+        </div>
+    </form>
+
+    <!-- Table or GRID  in HTML -->
+
+    <table border="2">
+        <thead>
+            <tr>
+                <td>S.No</td>
+                <td>User Name</td>
+                <td>Subject</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Mayank</td>
+                <td>Maths</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Manish</td>
+                <td>Physics</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Shankey</td>
+                <td>English</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Vaccination Form using tables -->
+
+    <table border="2">
+        <thead>
+            <tr style="text-align: center;">
+                <td colspan="2">
+                    <h4>Vaccination Registration Form</h4>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <label>First Name : </label>
+                </td>
+                <td>
+                    <input type="text" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Last Name : </label>
+                </td>
+                <td>
+                    <input type="text" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Gender : </label>
+                </td>
+                <td>
+                    <input type="radio" name="gender" /><label>Male</label>
+                    <input type="radio" name="gender" /><label>Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Mobile Number : </label>
+                </td>
+                <td>
+                    <input type="tel" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>City : </label>
+                </td>
+                <td>
+                    <select>
+                        <option>Select</option>
+                        <option>Delhi</option>
+                        <option>Bangalore</option>
+                        <option>Pune</option>
+                        <option>Chennai</option>
+                        <option>Varanasi</option>
+                    </select>
+                </td>
+            </tr>
+            <tr style="text-align: center;">
+                <td colspan="2">
+                    <input type="submit" />
+                    <input type="reset" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- HTML Lists -->
+
+    <!-- Ordered List -->
+
+    <ol type="1">
+        <li>Shubham</li>
+        <li>Mayank</li>
+        <li>Aarti</li>
+    </ol>
+
+    <ol type="A">
+        <li>Shubham</li>
+        <li>Mayank</li>
+        <li>Aarti</li>
+    </ol>
+
+    <ol type="a">
+        <li>Shubham</li>
+        <li>Mayank</li>
+        <li>Aarti</li>
+    </ol>
+
+    <ol type="I">
+        <li>Shubham</li>
+        <li>Mayank</li>
+        <li>Aarti</li>
+    </ol>
+
+    <ol type="i">
+        <li>Shubham</li>
+        <li>Mayank</li>
+        <li>Aarti</li>
+    </ol>
+
+    <!-- Unordered List -->
+
+    <ul type="circle">
+        <li>Shubham</li>
+        <li>Mayank</li>
+        <li>Aarti</li>
+    </ul>
+
+    <ul type="disk">
+        <li>Shubham</li>
+        <li>Mayank</li>
+        <li>Aarti</li>
+    </ul>
+
+    <ul type="square">
+        <li>Shubham</li>
+        <li>Mayank</li>
+        <li>Aarti</li>
+    </ul>
+
+    <!-- Anchor Tag -->
+
+    <a href="https:www.google.com" target="_blank">Google</a>
+
+    <!-- TextArea -->
+
+    <textarea rows="5" cols="50" placeholder="Enter the description"></textarea>
+
+    <!-- Footers -->
+
+    <footer>uygoierygoergo erhgoi ersgoierhh </footer>
+
+</body>
+
+
+</html>
